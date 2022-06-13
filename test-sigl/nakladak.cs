@@ -24,6 +24,10 @@ namespace test_sigl
             tachometr = 0;
             spotreba = 0;
         }
+        public void vylozitvse()
+        {
+            naklad = 0;
+        }
         public void Nalozitnaklad()
         {
         
@@ -39,7 +43,7 @@ namespace test_sigl
         public void Vylozitnaklad()
         {
             
-            if (naklad == 0)
+            if (naklad <= 0)
             {
                 naklad = 0;
             }
@@ -51,7 +55,7 @@ namespace test_sigl
         public void pohyb()
         {
 
-            if(stav_nadrz == 0)
+            if(stav_nadrz <= 0)
             {
                 tachometr += 0;
                 stav_nadrz = 0;
@@ -59,28 +63,28 @@ namespace test_sigl
             }
             else if(naklad > 2500)
             {
-                stav_nadrz -= 50;
-                tachometr += 50;
+                stav_nadrz -= 20;
+                tachometr += 100;
             }
             else if (naklad < 2500)
             {
-                stav_nadrz -= 40;
-                tachometr += 40;
+                stav_nadrz -= 10;
+                tachometr += 100;
             }
         }
         public void Spotreba()
         {
-            if(stav_nadrz == 0)
+            if(stav_nadrz <= 0)
             {
                 spotreba = 0;
             }
             else if(naklad > 2500)
             {
-                spotreba = 50;
+                spotreba = 20;
             }
             else if(naklad < 2500)
             {
-                spotreba = 40;
+                spotreba = 10;
             }
         }
         public void Natankovat()
@@ -88,7 +92,46 @@ namespace test_sigl
             stav_nadrz = 200;
         }
 
-           
-            
+        public void Jet50()
+        {
+            if (stav_nadrz <= 0)
+            {
+                tachometr += 0;
+                stav_nadrz = 0;
+
+            }
+            else if (naklad > 2500)
+            {
+                stav_nadrz -= 10;
+                tachometr += 50;
+            }
+            else if (naklad < 2500)
+            {
+                stav_nadrz -= 5;
+                tachometr += 50;
+            }
+        }
+        public void Jet10()
+        {
+            if (stav_nadrz <= 0)
+            {
+                tachometr += 0;
+                stav_nadrz = 0;
+
+            }
+            else if (naklad > 2500)
+            {
+                stav_nadrz -= 2;
+                tachometr += 10;
+            }
+            else if (naklad < 2500)
+            {
+                stav_nadrz -= 1;
+                tachometr += 10;
+            }
+        }
+        
+
+
     }
 }

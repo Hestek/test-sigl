@@ -7,11 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="200" Margin="289,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Name="txt1"/>
-        <Button Content="nalozit" Margin="28,302,680,82"  Click="Button_Click"/>
-        <Button Content="vylozit" HorizontalAlignment="Left"  Margin="152,302,0,0" VerticalAlignment="Top" Width="118" Click="Button_Click_1" Height="50"/>
-        <Button Content="jeď" HorizontalAlignment="Left"  Margin="400,307,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_2" Height="45"/>
-        <Button Content="Dotankuj" Margin="552,307,148,82" Click="Button_Click_3"/>
+        <TextBox HorizontalAlignment="Left" Height="200" Margin="28,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" Name="txt1"/>
+        <Button Content="nalozit" Margin="14,261,666,123"  Click="Button_Click"/>
+        <Button Content="vylozit" HorizontalAlignment="Left"  Margin="139,261,0,0" VerticalAlignment="Top" Width="131" Click="Button_Click_1" Height="50"/>
+        <Button Content="jeď 100km" HorizontalAlignment="Left"  Margin="14,367,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click_2" Height="45"/>
+        <Button Content="Dotankuj" Margin="14,316,666,72" Click="Button_Click_3"/>
+        <Button Content="jeď 50km" Margin="139,367,530,22" Click="Button_Click_4"/>
+        <Button Content="Jeď 10km" Margin="139,316,530,72" Click="Button_Click_5"/>
+        <TextBox HorizontalAlignment="Left" Margin="505,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" Height="200" Name="txt2"/>
+        <Button Content="Nalozit" HorizontalAlignment="Left" Margin="505,261,0,0" VerticalAlignment="Top" Height="52" Width="110" Click="Button_Click_6"/>
+        <Button Content="Vylozit" HorizontalAlignment="Left" Margin="646,261,0,0" VerticalAlignment="Top" Height="52" Width="104" Click="Button_Click_7"/>
+        <Button Content="Dotankuj" HorizontalAlignment="Left" Margin="505,318,0,0" VerticalAlignment="Top" Height="44" Width="110" Click="Button_Click_8"/>
+        <Button Content="Jeď 10km" HorizontalAlignment="Left" Margin="646,318,0,0" VerticalAlignment="Top" Height="44" Width="104" Click="Button_Click_11"/>
+        <Button Content="Jeď 100km" HorizontalAlignment="Left" Margin="505,367,0,0" VerticalAlignment="Top" Height="45" Width="113" Click="Button_Click_9"/>
+        <Button Content="Jeď 50km" HorizontalAlignment="Left" Margin="646,367,0,0" VerticalAlignment="Top" Height="45" Width="104" Click="Button_Click_10"/>
+        <Button Content="Vylozit vse" HorizontalAlignment="Left" Margin="275,261,0,0" VerticalAlignment="Top" Height="50" Width="107" Click="Button_Click_12"/>
+        <Button Content="Vylozit vse" HorizontalAlignment="Left" Margin="412,261,0,0" VerticalAlignment="Top" Height="52" Width="88" Click="Button_Click_13"/>
 
     </Grid>
 </Window>
