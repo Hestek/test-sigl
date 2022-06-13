@@ -66,7 +66,7 @@ namespace test_sigl
                 stav_nadrz -= 20;
                 tachometr += 100;
             }
-            else if (naklad < 2500)
+            else if (naklad <= 2500)
             {
                 stav_nadrz -= 10;
                 tachometr += 100;
@@ -82,7 +82,7 @@ namespace test_sigl
             {
                 spotreba = 20;
             }
-            else if(naklad < 2500)
+            else if(naklad <= 2500)
             {
                 spotreba = 10;
             }
@@ -105,7 +105,7 @@ namespace test_sigl
                 stav_nadrz -= 10;
                 tachometr += 50;
             }
-            else if (naklad < 2500)
+            else if (naklad <= 2500)
             {
                 stav_nadrz -= 5;
                 tachometr += 50;
@@ -124,7 +124,7 @@ namespace test_sigl
                 stav_nadrz -= 2;
                 tachometr += 10;
             }
-            else if (naklad < 2500)
+            else if (naklad <= 2500)
             {
                 stav_nadrz -= 1;
                 tachometr += 10;
